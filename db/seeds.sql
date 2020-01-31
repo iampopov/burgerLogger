@@ -1,24 +1,24 @@
 INSERT INTO burgers
     (name)
 VALUES
-    ('Meeses');
+    ('Original');
 INSERT INTO burgers
     (name)
 VALUES
-    ('Bobbi');
+    ('Veggie');
 INSERT INTO burgers
-    (name, eaty)
+    (name, eaten)
 VALUES
-    ('Sylvester', true);
+    ('Bacon', true);
 INSERT INTO burgers
-    (name, eaty)
+    (name, eaten)
 VALUES
-    ('Marilyn Manson', true);
+    ('Naked', true);
 INSERT INTO burgers
-    (name, eaty)
+    (name, eaten)
 VALUES
-    ('Joe Biden', true);
+    ('Chipotle', true);
 INSERT INTO burgers
     (name)
 VALUES
-    ('Owens');
+    ('Double');

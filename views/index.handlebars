@@ -1,20 +1,20 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers that are not eaty!</h2>
+<h2>Burgers that are not eaten!</h2>
 
 <ul>
   {{#each burgers}}
-  {{#unless eaty}}
+  {{#unless eaten}}
   {{> burgers/burger-block eat=true}}
   {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers that are eaty!</h2>
+<h2>Burgers that are eaten!</h2>
 
 <ul>
   {{#each burgers}}
-  {{#if eaty}}
+  {{#if eaten}}
   {{> burgers/burger-block eat=false}}
   {{/if}}
   {{/each}}
@@ -24,15 +24,15 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">burger Name:</label>
+    <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
   <div class="form-group">
-    <label for="eaty">Eaty?</label><br>
-    <input type="radio" name="eaty" value="1" checked> Eaty!<br>
-    <input type="radio" name="eaty" value="0"> Awake
+    <label for="eaten">Eaten?</label><br>
+    <input type="radio" name="eaten" value="1" checked> Eaten!<br>
+    <input type="radio" name="eaten" value="0"> Awake
   </div>
 
-  <button type="submit">Add burger</button>
+  <button type="submit">Add a burger</button>
 </form>

@@ -5,7 +5,7 @@ $(function() {
     var neweat = $(this).data("neweat");
 
     var neweatState = {
-      eaty: neweat
+      eaten: neweat
     };
 
     // Send the PUT request.
@@ -27,7 +27,7 @@ $(function() {
 
     var newburger = {
       name: $("#ca").val().trim(),
-      eaty: $("[name=eaty]:checked").val().trim()
+      eaten: $("[name=eaten]:checked").val().trim()
     };
 
     // Send the POST request.
