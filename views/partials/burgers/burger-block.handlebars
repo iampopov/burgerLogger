@@ -1,9 +1,12 @@
 <li>
-	{{name}}
+	<div class="alert alert-secondary">
+		<div class="w-50 p-3">
+			<h3>{{name}}</h3>
+		</div>
+		<button class="btn btn-outline-secondary btn-sm change-eat" data-id="{{id}}" data-neweat="{{eat}}">
+			{{#if eat}}BACK TO WAITING LIST!{{else}}DEVOUR IT!{{/if}}
+		</button>
 
-	<button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">
-		{{#if eat}}BACK TO WAITING LIST!{{else}}DEVOUR IT!{{/if}}
-	</button>
-
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+		<button class="btn btn-outline-danger btn-sm delete-burger" data-id="{{this.id}}">DELETE!</button>
+	</div>
 </li>
