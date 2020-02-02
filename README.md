@@ -160,5 +160,3 @@ The has the following structure:
    - Create the `layouts` directory inside `views` directory.
 
      - Create the `main.handlebars` file inside `layouts` directory.
-
-     - Setup the `main.handlebars` file so it's able to be used by Handlebars.
