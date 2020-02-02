@@ -54,35 +54,24 @@ The has the following structure:
         └── main.handlebars
 ```
 
-#### App Setup
-
-1. Create a GitHub repo called `burger` and clone it to your computer.
-
-2. Make a package.json file by running `npm init` from the command line.
-
-3. Install the Express npm package: `npm install express`.
-
-4. Create a server.js file.
-
-5. Install the Handlebars npm package: `npm install express-handlebars`.
-
-6. Install MySQL npm package: `npm install mysql`.
-
-7. Require the following npm packages inside of the server.js file:
-   - express
-
 #### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`.
+The `db` has the following schema saved as `schema.sql` file:
+The below can help re-creating db on a local computer:
 
-2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
+CREATE DATABASE burger_db;
+USE burger_db;
 
-   - Create the `burgers_db`.
-   - Switch to or use the `burgers_db`.
-   - Create a `burgers` table with these fields:
-     - **id**: an auto incrementing int that serves as the primary key.
-     - **burger_name**: a string.
-     - **devoured**: a boolean.
+CREATE TABLE burgers
+(
+id int NOT NULL
+AUTO_INCREMENT,
+name varchar
+(255) NOT NULL,
+eaten BOOLEAN DEFAULT false,
+PRIMARY KEY
+(id)
+);
 
 3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
 
