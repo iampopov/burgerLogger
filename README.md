@@ -141,10 +141,3 @@ The has the following structure:
 #### Controller setup
 
 1. Inside your `burger` directory, create a folder named `controllers`.
-
-2. In `controllers`, create the `burgers_controller.js` file.
-
-3. Inside the `burgers_controller.js` file, import the following:
-
-   - Express
-   - `burger.js`
