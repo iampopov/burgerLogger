@@ -54,7 +54,7 @@ The has the following structure:
         └── main.handlebars
 ```
 
-#### DB Setup
+#### DB queries
 
 1. The `db` folder has the following schema saved as `schema.sql` file:
 2. The below can help re-creating db on a local computer:
