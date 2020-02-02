@@ -162,5 +162,3 @@ The has the following structure:
      - Create the `main.handlebars` file inside `layouts` directory.
 
      - Setup the `main.handlebars` file so it's able to be used by Handlebars.
-
-     - Setup the `index.handlebars` to have the template that Handlebars can render onto.
