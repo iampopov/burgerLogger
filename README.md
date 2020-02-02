@@ -56,8 +56,8 @@ The has the following structure:
 
 #### DB Setup
 
-The `db` has the following schema saved as `schema.sql` file:
-The below can help re-creating db on a local computer:
+1. The `db` folder has the following schema saved as `schema.sql` file:
+2. The below can help re-creating db on a local computer:
 
 CREATE DATABASE burger_db;
 USE burger_db;
@@ -73,11 +73,35 @@ PRIMARY KEY
 (id)
 );
 
-3. Still in the `db` folder, create a `seeds.sql` file. In this file, write insert queries to populate the `burgers` table with at least three entries.
+3. In the `db` folder, file named `seeds.sql`. This file, inserts queries to populate the `burgers`:
+   INSERT INTO burgers
+   (name)
+   VALUES
+   ('Original');
+   INSERT INTO burgers
+   (name)
+   VALUES
+   ('Veggie');
+   INSERT INTO burgers
+   (name, eaten)
+   VALUES
+   ('Bacon', true);
+   INSERT INTO burgers
+   (name, eaten)
+   VALUES
+   ('Naked', true);
+   INSERT INTO burgers
+   (name, eaten)
+   VALUES
+   ('Chipotle', true);
+   INSERT INTO burgers
+   (name)
+   VALUES
+   ('Double');
 
-4. Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
+4) Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
 
-5. Now you're going to run these SQL files.
+5) Now you're going to run these SQL files.
 
    - Make sure you're in the `db` folder of your app.
 
