@@ -150,13 +150,3 @@ The has the following structure:
    - `burger.js`
 
 4. Create the `router` for the app, and export the `router` at the end of your file.
-
-#### View setup
-
-1. Inside your `burger` directory, create a folder named `views`.
-
-   - Create the `index.handlebars` file inside `views` directory.
-
-   - Create the `layouts` directory inside `views` directory.
-
-     - Create the `main.handlebars` file inside `layouts` directory.
