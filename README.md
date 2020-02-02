@@ -8,7 +8,9 @@ This app is a burger logger with MySQL, Node, Express, Handlebars and a homemade
 
 - Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured.
 
-- Each burger in the waiting area also has a `Devour!` button. When the user clicks it, the burger will move to the right side of the page.
+- Each burger in the waiting area also has a `DEVOUR IT!` button. When the user clicks it, the burger will move to the right side of the page.
+
+- If `DEVOUR IT!` button was pressed by accident the burger can be moved back by clicking on `BACK TO WAITING LIST!` button!
 
 - The app will store every burger in a database, whether devoured or not.
 
